@@ -1,0 +1,137 @@
+
+.footer {
+    border-radius: 50px;
+    margin-top: 81px;
+    padding: 30px 90px;
+    height: 261px;
+}
+
+.footer__newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__newsletter-label {
+    font-size: 44px;
+    margin-bottom: 17px;
+}
+
+.footer__newsletter-input {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40.8%;
+    height: 50px;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding-left: 19px;
+}
+
+.footer__newsletter-input::placeholder {
+    color: black;
+}
+
+.footer__bottom {
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__link-list {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__link {
+    margin-right: 30px;
+}
+
+.footer__link:last-of-type {
+    margin-right: 0;
+}
+
+.footer__link_real {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width:1024px) {
+    .footer {
+        padding: 30px 40px;
+        height: auto;
+    }
+
+    .footer__newsletter-input {
+        width: 45%;
+    }
+
+    .footer__link {
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
+    .footer__copyright {
+        font-size: 14px;
+    }
+
+    .footer__newsletter-label {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:769px) {
+
+    .footer__bottom {
+        margin-top: 30px;
+        line-height: 1.6em;
+    }
+
+    .footer__link-list {
+        padding: 0;
+        margin-right: 30px;
+    }
+
+    .footer__copyright {
+        order: 2;
+    }
+
+    .footer__newsletter-input {
+        width: 70%;
+    }
+
+    .footer__newsletter-label {
+        font-size: 36px;
+    }
+
+    @media (max-width:480px) {
+        .footer__newsletter-label {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            padding: 20px 25px;
+        }
+
+        .footer__newsletter-input {
+            font-size: 14px;
+            width: 200px;
+        }
+
+        .footer__bottom {
+            margin-top: 16px;
+        }
+
+        .footer__link-list {
+            margin-right: 0;
+        }
+
+        .footer__link, .footer__copyright {
+            font-size: 12px;
+        }
+    }
+}

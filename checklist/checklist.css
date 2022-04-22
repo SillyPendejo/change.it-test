@@ -1,0 +1,121 @@
+.checklist {
+    margin: 160px 0;
+    height: 717px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+.checklist__ad, .checklist__form {
+    width: 50%;
+}
+
+.checklist__ad {
+    font-size: 76px;
+    font-weight: 500;
+    padding-top: 89px;
+    padding-left: 81px;
+    background-image: url("/img/checklist-ad-finger.png");
+    background-repeat: no-repeat;
+    background-position: 78% bottom ;
+}
+
+.checklist__form {
+    padding: 48px 92.5px 39px 91.5px;   
+}
+
+.checklist__label {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+
+.checklist__input, .checklist__select {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    font-size: 16px;
+    height: 50px;
+    border-radius: 60px;
+    border: 1px solid black;
+    padding-left: 20px;
+    margin-bottom: 19px;
+}
+
+.checklist__select {
+    appearance: none;
+    background: url("/img/Icon.png") no-repeat 95% center;
+}
+
+.checklist__input:nth-last-of-type(1) {
+    margin-bottom: 15px;
+}
+
+.checklist__policy, .checklist__policy_link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #7A7A7A;
+}
+
+.checklist__button {
+    margin-top: 35px;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+}
+
+@media (max-width:1200px) {
+    .checklist__ad {
+        padding: 60px;
+        font-size: 64px;
+    }
+
+    .checklist__form {
+        padding: 40px 65px 30px 65px;
+    }
+}
+
+@media (max-width:1024px) {
+    .checklist__ad {
+        padding: 35px;
+        font-size: 56px;
+    }
+
+    .checklist__form {
+        padding: 40px 40px 20px 40px;   
+    }
+
+    .checklist__button {
+        margin-top: 55px;
+    }
+}
+
+@media (max-width:769px) {
+    .checklist__ad, .checklist__form {
+        width: 100%;
+    }
+
+    .checklist__ad {
+        height: 500px;
+    }
+
+    .checklist {
+        height: auto;
+    }
+
+    .checklist__button {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:480px) {
+    .checklist__ad {
+        font-size: 39px;
+        padding: 25px;
+    }
+
+    .checklist__input, .checklist__select {
+        font-size: 14px;
+    }
+}
