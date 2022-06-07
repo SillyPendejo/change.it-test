@@ -100,11 +100,7 @@ export class Blog {
       });
 
       if (index == -1) {
-        if (entry.isReversed) {
-          entry.posts.unshift(post);
-        } else {
-          entry.posts.push(post);
-        }
+        entry.posts.push(post);
       } else {
         entry.posts.splice(index, 0, post);
       }
