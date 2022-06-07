@@ -1,14 +1,14 @@
-@import url("./header.css");
+@import url("./css/header.css");
 @import url("./fonts/stylesheet.css");
-@import url("./promo-text.css");
-@import url("./overview.css");
-@import url("./slogan.css");
-@import url("./faq.css");
-@import url("./block.css");
-@import url("./review.css");
-@import url("./blog.css");
-@import url("./checklist.css");
-@import url("./footer.css");
+@import url("./css/promo-text.css");
+@import url("./css/overview.css");
+@import url("./css/slogan.css");
+@import url("./css/faq.css");
+@import url("./css/block.css");
+@import url("./css/review.css");
+@import url("./css/blog.css");
+@import url("./css/checklist.css");
+@import url("./css/footer.css");
 
 *{
     box-sizing: border-box;

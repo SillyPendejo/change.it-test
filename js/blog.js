@@ -298,7 +298,7 @@ class Blog {
       if (this.reverseSort) {
         buttonElement.style.backgroundImage = "";
       } else {
-        buttonElement.style.backgroundImage = "url('./img/reversesort.png')";
+        buttonElement.style.backgroundImage = "url('../img/reversesort.png')";
       }
       this.reverseSort = !this.reverseSort;
     }
