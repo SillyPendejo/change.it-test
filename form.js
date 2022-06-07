@@ -99,7 +99,7 @@ class Form {
       case "date":
         isValid = this.isValidDate(inputObj);
         if (!input.value) {
-          inputObj.errorMsg = "Empty date";
+          inputObj.errorMsg = "Invalid date";
           break;
         }
         if (!isValid) inputObj.errorMsg = "Date can't be later than today";
