@@ -1,4 +1,4 @@
-export class Blog {
+class Blog {
   constructor(blogElement) {
     this.blog = blogElement;
     this.blogTitle = document.querySelector(".blog__input_header");
@@ -338,3 +338,5 @@ export class Blog {
     }
   }
 }
+
+const blog = new Blog(document.querySelector(".blog"));

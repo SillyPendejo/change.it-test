@@ -1,4 +1,4 @@
-export class Form {
+class Form {
   constructor(formElement) {
     this.form = formElement;
     this.inputFields = {};
@@ -175,3 +175,5 @@ export class Form {
     document.querySelector(".checklist__form").append(notificationElement);
   }
 }
+
+const form = new Form(document.querySelector(".checklist__form_element"));
