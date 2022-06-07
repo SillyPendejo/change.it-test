@@ -1,0 +1,21 @@
+.block {
+    border-radius: 60px;
+    color: #000;
+}
+
+.block_white {
+    background-color: #fff;
+}
+
+.block_pink {
+    background-color: #F1E0FD;
+}
+
+.block_lime {
+    background-color: #EAFC9C;
+}
+
+.block_blue {
+    background-color: #3943F5;
+    color: #fff;
+}

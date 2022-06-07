@@ -20,6 +20,7 @@
                         <li class="header__nav-item"><a class="header__nav-link" href="#overview">Overview</a></li>
                         <li class="header__nav-item"><a class="header__nav-link" href="#faq">How it works</a></li>
                         <li class="header__nav-item"><a class="header__nav-link" href="#reviews">Reviews</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="#blog">Blog</a></li>
                         <li class="header__nav-item"><a class="header__nav-link" href="#checklist">Checklist</a></li>
                     </ul>
                 </div>
@@ -77,29 +78,64 @@
                 </li>
             </ul>
         </div>
-        <div class="story__button button">Tell your story</div>
+        <div class="blog_container">
+            <form class="blog block block_white" id="blog">
+                <div class="blog__inputarea">
+                    <label class="checklist__label blog__label" for="blogheader">Title:</label>
+                    <input class="blog__input blog__input_header checklist__input" type="text" id="blogheader" placeholder="Name your story...">
+                    <textarea class="blog__input blog__input_text checklist__input" type="text" id="blogtext" rows="5" placeholder="Tell us what happened..."></textarea>
+                </div>
+                <button class="story__button button">Post your story</button>
+            </form>
+            <div class="blog__controls_container block block_pink">
+                <div class="blog__search_container">
+                    <label class="checklist__label" for="searchbar" >search:</label>
+                    <input class="blog__searchbar checklist__input" type="text" id="searchbar">
+                </div>
+                <div class="blog__button_container">
+                    <button class="blog__sort_button blog__sort_sortby">Sort by</button>
+                    <button class="blog__sort_button blog__sort_abc">ABC</button>
+                    <button class="blog__sort_button blog__sort_date">Date</button>
+                </div>
+            </div>
+            <div class="blog__posts block block_white">
+            </div>
+            <template class="post__template">
+                <div class="blog__post block block_lime">
+                    <div class="blog__left_container">
+                        <div class="blog__post_title"></div>
+                        <div class="blog__post_text"></div>
+                    </div>
+                    <div class="blog__right_container">
+                        <div class="blog__post_date"></div>
+                        <div class="blog__post_delete"></div>
+                    </div>
+                </div>
+            </template>
+        </div>
         <div class="checklist" id="checklist">
             <div class="checklist__ad block block_lime">Get your free Change.it checklist</div>
             <div class="checklist__form block block_white">
-                <form>
-                    <label class="checklist__label" for="name">First Name</label><br>
-                    <input class="checklist__input" type="text" name="name" id="name" placeholder="Enter Your First Name"><br>
-                    <label class="checklist__label" for="lastname">Last Name</label><br>
-                    <input class="checklist__input" type="text" name="lastname" id="lastname" placeholder="Enter Your Last Name"><br>
-                    <label class="checklist__label" for="email">Email</label><br>
-                    <input class="checklist__input" type="email" name="email" id="email" placeholder="Enter Your Email"><br>
-                    <label class="checklist__label" for="event">Life Event</label><br>
-                    <select class="checklist__select" name="event" id="event" placeholder="Enter Your First Name">
+                <form class="checklist__form_element">
+                    <label class="checklist__label" for="name">First Name</label>
+                    <input class="checklist__input" type="text" name="name" id="name" placeholder="Enter Your First Name">
+                    <label class="checklist__label" for="lastname">Last Name</label>
+                    <input class="checklist__input" type="text" name="lastname" id="lastname" placeholder="Enter Your Last Name">
+                    <label class="checklist__label" for="email">Email</label>
+                    <input class="checklist__input" type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <label class="checklist__label" for="event">Life Event</label>
+                    <select class="checklist__select" name="event" id="event">
+                        <option class="checklist__option" value="" disabled selected>Select Life Event</option>
                         <option class="checklist__option">Marriage</option>
                         <option class="checklist__option">Divorce</option>
                         <option class="checklist__option">Marriage again</option>
                         <option class="checklist__option">Divorce 2: Electric Boogaloo</option>
-                    </select><br>
-                    <label class="checklist__label" for="date">Life Event Date</label><br>
-                    <input class="checklist__input checklist__input_date" type="text" name="date" id="date" placeholder="DD/MM/YYYY" onfocus="(this.type='date')"><br>
-                </form>
+                    </select>
+                    <label class="checklist__label" for="date">Life Event Date</label>
+                    <input class="checklist__input checklist__input_date" type="text" name="date" id="date" placeholder="DD/MM/YYYY" onfocus="(this.type='date')">
                 <span class="checklist__policy">By submitting your details you agree with our <a class="checklist__policy_link" href="#">Privacy Policy</a>.</span>
                 <button class="checklist__button button" type="submit">Download</button>
+                </form>
             </div>
         </div>
         
@@ -120,6 +156,8 @@
             </div>
         </footer>
     
+    <script src="./form.js"></script>
+    <script src="./blog.js"></script>
 </body>
 
 </html>

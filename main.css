@@ -1,13 +1,14 @@
-@import url("./header/header.css");
+@import url("./header.css");
 @import url("./fonts/stylesheet.css");
-@import url("./promo-text/promo-text.css");
-@import url("./overview/overview.css");
-@import url("./slogan/slogan.css");
-@import url("./faq/faq.css");
-@import url("./block/block.css");
-@import url("./review/review.css");
-@import url("./checklist/checklist.css");
-@import url("./footer/footer.css");
+@import url("./promo-text.css");
+@import url("./overview.css");
+@import url("./slogan.css");
+@import url("./faq.css");
+@import url("./block.css");
+@import url("./review.css");
+@import url("./blog.css");
+@import url("./checklist.css");
+@import url("./footer.css");
 
 *{
     box-sizing: border-box;
@@ -23,18 +24,4 @@ body {
     background-color: black;
     padding: 10px 10px;
     border-radius: 60px;
-}
-
-.story__button {
-    width: 100%;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 60px 0;
-}
-
-@media (max-width:769px) {
-    .story__button {
-        margin: 30px 0;
-        font-size: 14px;
-    }
 }

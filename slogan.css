@@ -1,0 +1,82 @@
+.slogan {
+    margin-top: 160px;
+    height: 485px;
+    font-size: 110px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: url("/img/faq_arm_dude.png") no-repeat;
+    background-position: 33.5% 99%;
+    line-height: 1.15em;
+    background-size: contain;
+}
+
+.slogan__first {
+    display: inline-block;
+    white-space: pre-wrap;
+    margin-top: 132px;
+    margin-left: 9.3%;
+}
+
+.slogan__second {
+    display: inline-block;
+    white-space: nowrap;
+    margin-left: 47.5%;
+}
+
+@media (max-width: 1200px) {
+    .slogan {
+        margin-top: 140px;
+        height: 400px;
+        font-size: 90px;
+    }
+
+    .slogan__first {
+        margin-top: 90px;
+        margin-left: 11%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .slogan {
+        margin-top: 90px;
+        height: 330px;
+        font-size: 68px;
+    }
+}
+
+@media (max-width: 769px) {
+    .slogan {
+        margin-top: 60px;
+        height: 250px;
+        font-size: 48px;
+        background-position: 30% 99%;
+    }
+
+    .slogan__first {
+        margin-top: 70px;
+        margin-left: 8%;
+    }
+
+    .slogan__second {
+        margin-left: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .slogan {
+        margin-top: 40px;
+        height: 200px;
+        font-size: 33px;
+        background-position: 30% 99%;
+    }
+
+    .slogan__first {
+        height: 100px;
+        margin-top: 50px;
+        margin-left: 5%;
+    }
+
+    .slogan__second {
+        margin-left: 39%;
+    }
+}
